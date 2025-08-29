@@ -1,0 +1,87 @@
+/* Estilos de la pagina principal */
+
+.hero-container {
+    text-align: center;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 4.2em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0 0 50px 0;
+}
+
+.hero-title .highlight-text {
+    background-image: none;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    color: #5865f2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: rgba(245, 245, 245, 0.767);
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* el carrusel */
+
+.brand-ticker-container {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right,
+            transparent,
+            black 20%,
+            black 80%,
+            transparent);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 20%,
+            black 80%,
+            transparent);
+}
+
+.brand-ticker {
+    display: flex;
+    width: calc(350px * 12); 
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.brand-logo {
+    flex-shrink: 0;
+    width: 350px;
+    padding: 0 1px;
+    box-sizing: border-box;
+}
+
+.brand-logo img {
+    height: 200px;
+    width: auto;
+    filter: grayscale(100%) opacity(60%);
+    transition: all 0.3s ease;
+    font-size: 9.0rem;
+}
+
+
+.brand-ticker:hover img {
+    filter: grayscale(0%) opacity(100%);
+}
+
+.brand-ticker-container:hover .brand-ticker {
+    animation-play-state: paused;
+}

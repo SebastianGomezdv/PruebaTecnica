@@ -1,0 +1,43 @@
+/* Estilos del componente Modal para darle forma y orden al formulario */
+
+/* Fondo del modal del formulario */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Estilos del contenido del modal del formulario */
+.modal-content {
+    position: relative;
+    background: rgba(44, 44, 44, 0.8);
+    border-radius: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation: slideUp 0.4s ease;
+    width: 90%;
+    max-width: 650px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+/* Estilos del botón cerrar del formulario */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
