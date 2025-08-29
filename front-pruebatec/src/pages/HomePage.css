@@ -48,7 +48,7 @@
 
 .brand-ticker {
     display: flex;
-    width: calc(350px * 12); 
+    width: calc(350px * 12);
     animation: scroll 40s linear infinite;
 }
 
@@ -65,18 +65,22 @@
 .brand-logo {
     flex-shrink: 0;
     width: 350px;
-    padding: 0 1px;
+    height: 200px;
+    padding: 20px;
     box-sizing: border-box;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand-logo img {
-    height: 200px;
-    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     filter: grayscale(100%) opacity(60%);
     transition: all 0.3s ease;
-    font-size: 9.0rem;
 }
-
 
 .brand-ticker:hover img {
     filter: grayscale(0%) opacity(100%);
