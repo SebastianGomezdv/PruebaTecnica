@@ -1,0 +1,123 @@
+/* estilo principal del formulario, diseño en columna y sin bordes ni fondo. */
+.glass-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    scrollbar-shadow-color: inherit;
+}
+
+/* centra y separa el encabezado del formulario. */
+.form-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* estilo del título principal del formulario. */
+.form-header h2 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* estilo del subtítulo bajo el título. */
+.form-header p {
+    margin: 5px 0 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+
+/* agrupa y separa los campos del formulario en columnas. */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* estilo del título de cada grupo de campos. */
+legend {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+/* estilo visual para los inputs y selects. */
+input,
+select {
+    background: rgba(255, 255, 255, 0.15);
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* color del texto de los placeholders en los inputs. */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* efecto visual al enfocar los campos. */
+input:focus,
+select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(88, 101, 242, 0.8);
+    box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);
+}
+
+/* estilo de las opciones dentro de los select. */
+select option {
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+/* estilo general de los botones del formulario. */
+button {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #5865f2;
+    background-image: none;
+    background-size: 200% auto;
+    transition: all 0.4s ease;
+}
+
+/* efecto visual al pasar el mouse sobre el botón. */
+button:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    background: #4a4268;
+    box-shadow: 0 10px 20px rgba(0, 153, 255, 0.4);
+}
+
+/* efecto visual al presionar el botón. */
+button:active {
+    transform: translateY(-1px);
+}
+
+/* asegura que las alertas SweetAlert estén por encima de otros elementos. */
+.swal2-container {
+    z-index: 9999 !important; 
+}
