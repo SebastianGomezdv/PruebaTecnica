@@ -62,6 +62,8 @@ Se utilizó **MySQL** como gestor de base de datos.
 La estructura cuenta con tablas relacionadas para manejar la jerarquía de:
 - País → Departamento → Ciudad.
 
+Se puede utilizar archivo dump.sql o fidelizacion.sql (Script de la base de datos)
+
 ## Experiencia durante el desarrollo
 Al principio me costó un poco hacer las pruebas en Postman, sobre todo con el método POST que guarda los datos del cliente en la base de datos.  
 Me daba errores y me tomó tiempo entender qué estaba pasando.  
